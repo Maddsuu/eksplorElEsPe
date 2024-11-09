@@ -12,7 +12,7 @@
                     </tr>
                     <tr>
                         <td>Nomor Induk Siswa</td>
-                        <td class="right">{{ $siswa->nis }}</td>
+                        <td class="right">: {{ $siswa->nis }}</td>
                     </tr>
                     <tr>
                         <td>Kelas/Semester</td>

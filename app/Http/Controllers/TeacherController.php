@@ -154,7 +154,7 @@ class TeacherController extends Controller
         return view('student.index', [
             'siswa' => $siswa,
             'data_nilai' => $data_nilai,
-            'walas' => $walas
+            'walas' => $walas,
         ]);
     }
 }

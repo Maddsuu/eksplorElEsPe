@@ -46,7 +46,7 @@ class AuthController extends Controller
         $teachers = $walas::all();
         foreach ($teachers as $teacher) {
             if ($teacher->nig === $request->nig && Hash::check($request->teacher_password, $teacher->password)) {
-                session(['user_type' => 'teacher', 'id' => $teacher->id, 'username' => $teacher->nama_guru]);
+                session(['user_type' => 'teacher', 'id' => $teacher->id, 'username' => $teacher->nama_walas]);
                 return redirect()->intended('/teacher');
             }
         }
