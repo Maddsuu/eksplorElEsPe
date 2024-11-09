@@ -15,7 +15,7 @@ class IsStudent
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if($request->session()->get('user_type') !== 'teacher') {
+        if($request->session()->get('user_type') !== 'student') {
             return redirect('/login#student')->withErrors(['message' => 'Silakan login untuk melanjutkan.']);
         }
 
