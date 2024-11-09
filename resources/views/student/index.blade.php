@@ -64,7 +64,7 @@
                         <td>{{ $data_nilai['pilihan']['grade'] }}</td>
                     </tr>
                     <tr style="font-weight: 600;">
-                        <td>6</td>
+                        <td> </td>
                         <td class="left">Rata - rata</td>
                         <td>{{ $data_nilai['rata_rata']['nilai'] }}</td>
                         <td>{{ $data_nilai['rata_rata']['grade'] }}</td>
@@ -73,8 +73,8 @@
             </table>
             <div class="walas-container">
                 <div class="walas">
+                    <div class="">Wali Kelas</div><br><br>
                     <div class="walas-name">{{ $walas->walas->nama_walas }}</div>
-                    <div class="strip">________________________</div>
                 </div>
             </div>
         </div>

@@ -26,6 +26,12 @@ class SiswaSeeder extends Seeder
                 'kelas_id' => 2,
                 'password' => bcrypt('1224002')
             ],
+            [
+                'nis' => '1224003',
+                'nama_siswa' => 'Amel',
+                'kelas_id' => 1,
+                'password' => bcrypt('1224003')
+            ],
         ];
 
         foreach ($data as $siswa) {
